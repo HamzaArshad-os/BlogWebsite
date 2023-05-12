@@ -47,7 +47,7 @@ const create = (req, res) => {
 
     const profanity = new Profanity();
 
-    let customBadwords = ['boobs', 'bitch','slut'];
+    let customBadwords = ['smelly', 'chicken','ugly'];
 
     profanity.addWords(...customBadwords);
     if (profanity.isProfane(req.body.comment_text)) {
